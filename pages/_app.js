@@ -19,7 +19,7 @@ const App = ({ Component, pageProps }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='HandheldFriendly' content='true' />
         <meta name='author' content='Hubert Strawa' />
-        <meta property='og:image' content='https://i.imgur.com/hLuYSCI.png' />
+        <meta property='og:image' content='https://i.imgur.com/5zY1iYr.png' />
         {/* Fonts */}
         <link
           rel='stylesheet'
@@ -93,6 +93,15 @@ const App = ({ Component, pageProps }) => {
           href='/assets/images/logo_ab.svg'
           type='image/x-icon'
         />
+        <script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-WWMYQVSK5B'
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-WWMYQVSK5B');
+        </script>
       </Head>
       {loader && <PreLoader />}
       <Component {...pageProps} />
