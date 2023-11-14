@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import { Fragment, useEffect, useState } from 'react'
 import PreLoader from '../src/layouts/PreLoader'
 import '../styles/globals.css'
@@ -12,6 +13,20 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <Fragment>
+      <Script
+        strategy='lazyOnload'
+        src={`https://www.googletagmanager.com/gtag/js?id=G-WWMYQVSK5B`}
+      />
+
+      <Script strategy='lazyOnload'>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-WWMYQVSK5B');
+                `}
+      </Script>
       <Head>
         <title>Aleksandra Bednarska - lektorka angielskiego</title>
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
@@ -93,7 +108,7 @@ const App = ({ Component, pageProps }) => {
           href='/assets/images/logo_ab.svg'
           type='image/x-icon'
         />
-        <script
+        {/* <script
           async
           src='https://www.googletagmanager.com/gtag/js?id=G-WWMYQVSK5B'
         ></script>
@@ -101,7 +116,7 @@ const App = ({ Component, pageProps }) => {
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-WWMYQVSK5B');
-        </script>
+        </script> */}
       </Head>
       {loader && <PreLoader />}
       <Component {...pageProps} />

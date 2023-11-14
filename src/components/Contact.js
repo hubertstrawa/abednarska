@@ -53,7 +53,7 @@ const Contact = () => {
                     <i aria-hidden='true' className='far fa-envelope' />
                   </div>
                   <div className='title'>
-                    <span> Email </span>
+                    <span> E-mail </span>
                   </div>
                   <div className='lui-text'>
                     <span> abednarska.kontakt@gmail.com </span>

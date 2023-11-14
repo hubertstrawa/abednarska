@@ -98,7 +98,7 @@ const Services = () => {
                     <p>
                       Podejście i sposób nauki jest dopasowany do Twoich potrzeb
                       i możliwości. Nie tracimy czasu na omawianie tematów,
-                      które są dla Ciebie nudne lub niepotrzebne
+                      które są dla Ciebie nudne lub niepotrzebne.
                     </p>
                   </div>
                 </div>

@@ -52,7 +52,7 @@ const Index = () => {
                   <div>
                     <p>
                       Jeśli zależy Ci na podniesieniu swoich kompetencji
-                      językowych to zapraszam Cię do kontaktu!.
+                      językowych to zapraszam Cię do kontaktu!
                     </p>
                   </div>
                   <div className='social-links'>
