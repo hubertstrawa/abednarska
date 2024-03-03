@@ -5130,6 +5130,15 @@ a.wp-block-button__link {
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  body {
+    zoom: 0.8;
+  }
+  .container-page {
+    margin-top: 2%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   /*base*/
   .cursor {
