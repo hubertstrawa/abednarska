@@ -16,7 +16,8 @@
 #contact-section,
 #skills,
 #resume-section,
-#learn-with-me {
+#learn-with-me,
+#offer-section {
   padding-top: 90px;
   margin-top: -90px;
 }
@@ -39,8 +40,30 @@
   #contact-section,
   #skills,
   #learn-with-me,
-  #resume-section {
+  #resume-section,
+  #offer-section {
     padding-top: 120px;
     margin-top: -120px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .conversational {
+    order: 1;
+  }
+  .general {
+    order: 0;
+  }
+  .business {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  .container-page {
+    zoom: 0.8;
+  }
+  .container-page {
+    margin-top: 2%;
   }
 }

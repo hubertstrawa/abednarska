@@ -5,12 +5,15 @@ import Layout from '../src/layouts/Layout'
 import Services from '../src/components/Services'
 import Contact from '../src/components/Contact'
 import Skills from '../src/components/Skills'
-const PortfolioIsotope = dynamic(
-  () => import('../src/components/PortfolioIsotope'),
-  {
-    ssr: false,
-  }
-)
+import Pricing from '../src/components/Pricing'
+
+// const PortfolioIsotope = dynamic(
+//   () => import('../src/components/PortfolioIsotope'),
+//   {
+//     ssr: false,
+//   }
+// )
+
 const Index = () => {
   return (
     <Layout pageClassName={'home'}>
@@ -111,7 +114,7 @@ const Index = () => {
                   <ul>
                     <li>
                       <span className='num'>
-                        150<strong>+</strong>
+                        300<strong>+</strong>
                       </span>
                       <span className='value'>
                         zadowolonych <strong>kursantów</strong>
@@ -176,6 +179,7 @@ const Index = () => {
 
       {/* Section - Resume */}
       <Resume />
+      <Pricing />
 
       {/* Section - Blog */}
 

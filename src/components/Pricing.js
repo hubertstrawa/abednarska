@@ -1,6 +1,6 @@
 const Pricing = () => {
   return (
-    <section className='lui-section lui-gradient-center' id='pricing-section'>
+    <section className='lui-section lui-gradient-center' id='offer-section'>
       {/* Heading */}
       <div className='lui-heading'>
         <div className='container'>
@@ -10,7 +10,7 @@ const Pricing = () => {
               data-splitting='words'
               data-animate='active'
             >
-              <span> Pricing </span>
+              <span> Oferta </span>
             </h2>
             <div
               className='m-subtitle splitting-text-anim-1 scroll-animate'
@@ -19,7 +19,8 @@ const Pricing = () => {
             >
               <span>
                 {' '}
-                my <b>Price Board</b>
+                Cena dotyczy zajęć indywidualnych. Koszt zajęć grupowych zależny
+                od liczby kursantów.
               </span>
             </div>
           </div>
@@ -29,28 +30,20 @@ const Pricing = () => {
       <div className='v-line v-line-left'>
         <div className='container'>
           <div className='pricing-items row'>
-            <div className='pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4'>
+            <div className='pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4 conversational'>
               <div
                 className='pricing-item scrolla-element-anim-1 scroll-animate'
                 data-animate='active'
               >
-                <div className='lui-subtitle'>
-                  <span> Hourley Basis </span>
-                </div>
-                <div className='icon' />
-                <div className='price'>
-                  <span>
-                    {' '}
-                    39 <b>$</b>
-                  </span>
-                  <em>Hour</em>
+                <div className='lui-subtitle' style={{ marginBottom: '10px' }}>
+                  <span> Conversational English Course </span>
                 </div>
                 <div className='lui-text'>
                   <div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
+                      Skupiony na doskonaleniu umiejętności konwersacji,
+                      płynności i swobody wypowiedzi. Skierowany do osób na
+                      poziomach B1-C2.
                     </p>
                   </div>
                 </div>
@@ -59,23 +52,38 @@ const Pricing = () => {
                     <ul>
                       <li>
                         <i className='fas fa-check' />
-                        Brand Design
+                        ukierunkowany na zastosowanie języka w praktyce
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        Web Development
+                        oparty na materiałach autentycznych: video, artykuły,
+                        fotografie
                       </li>
                       <li>
-                        <em>Advertising</em>
+                        <i className='fas fa-check' />
+                        uzupełniany materiałami autorskimi, odpowiadającymi
+                        indywidualnym potrzebom kursanta
                       </li>
                       <li>
-                        <em>Photography</em>
+                        <i className='fas fa-check' />
+                        kontakt i wsparcie merytoryczne między spotkaniami
+                      </li>
+                      <li>
+                        <i className='fas fa-check' />
+                        regularny feedback w trakcie trwania kursu
                       </li>
                     </ul>
                   </div>
                 </div>
+                <div className='price'>
+                  <span>
+                    {' '}
+                    80 <b>zł</b>
+                  </span>
+                  <em>godzina</em>
+                </div>
                 <a href='#contact-section' className='btn btn-solid'>
-                  <span>Start Project</span>
+                  <span>Wybieram</span>
                 </a>
                 <div
                   className='bg-img'
@@ -85,31 +93,23 @@ const Pricing = () => {
                 />
               </div>
             </div>
-            <div className='pricing-col center col-xs-12 col-sm-6 col-md-6 col-lg-4'>
+            <div className='pricing-col center col-xs-12 col-sm-6 col-md-6 col-lg-4 general'>
               <div className='label'>
-                <span> Popular </span>
+                <span> Popularny </span>
               </div>
               <div
                 className='pricing-item scrolla-element-anim-1 scroll-animate'
                 data-animate='active'
               >
-                <div className='lui-subtitle'>
-                  <span> Freelancing </span>
-                </div>
-                <div className='icon' />
-                <div className='price'>
-                  <span>
-                    {' '}
-                    259 <b>$</b>
-                  </span>
-                  <em>Week</em>
+                <div className='lui-subtitle' style={{ marginBottom: '10px' }}>
+                  <span> General English Course </span>
                 </div>
                 <div className='lui-text'>
                   <div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
+                      Zawiera poznawanie struktur gramatycznych, poszerzanie
+                      zakresu słownictwa ogólnego, rozwijanie umiejętności
+                      słuchania, pisania oraz mówienia.
                     </p>
                   </div>
                 </div>
@@ -118,24 +118,37 @@ const Pricing = () => {
                     <ul>
                       <li>
                         <i className='fas fa-check' />
-                        Brand Design
+                        ukierunkowany na ogólny rozwój kompetencji językowych
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        Web Development
+                        oparty się na podręcznikach renomowanych wydawnictw
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        Advertising
+                        uzupełniany materiałami w formie video, artykułów,
+                        newsów, fotografii
                       </li>
                       <li>
-                        <em>Photography</em>
+                        <i className='fas fa-check' />
+                        kontakt i wsparcie merytoryczne między spotkaniami
+                      </li>
+                      <li>
+                        <i className='fas fa-check' />
+                        regularny feedback w trakcie trwania kursu
                       </li>
                     </ul>
                   </div>
                 </div>
+                <div className='price'>
+                  <span>
+                    {' '}
+                    80 <b>zł</b>
+                  </span>
+                  <em>godzina</em>
+                </div>
                 <a href='#contact-section' className='btn btn-solid'>
-                  <span>Start Project</span>
+                  <span>Wybieram</span>
                 </a>
                 <div
                   className='bg-img'
@@ -145,28 +158,19 @@ const Pricing = () => {
                 />
               </div>
             </div>
-            <div className='pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4'>
+            <div className='pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4 business'>
               <div
                 className='pricing-item scrolla-element-anim-1 scroll-animate'
                 data-animate='active'
               >
-                <div className='lui-subtitle'>
-                  <span> Full Time </span>
-                </div>
-                <div className='icon' />
-                <div className='price'>
-                  <span>
-                    {' '}
-                    1.249 <b>$</b>
-                  </span>
-                  <em>Month</em>
+                <div className='lui-subtitle' style={{ marginBottom: '10px' }}>
+                  <span> Business English Training</span>
                 </div>
                 <div className='lui-text'>
                   <div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
+                      Skupiony na poszerzaniu słownictwa z zakresu biznesowego
+                      angielskiego. Skierowany do osób na poziomach B1-C2.
                     </p>
                   </div>
                 </div>
@@ -175,25 +179,38 @@ const Pricing = () => {
                     <ul>
                       <li>
                         <i className='fas fa-check' />
-                        Brand Design
+                        przygotowuje do pracy w międzynarodowym środowisku
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        Web Development
+                        zawiera rozwijanie praktycznych umiejętności komunikacji
+                        w kontaktach biznesowych
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        Advertising
+                        oparty na materiałach autentycznych: video, artykuły,
+                        fotografie
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        Photography
+                        kontakt i wsparcie merytoryczne między spotkaniami
+                      </li>
+                      <li>
+                        <i className='fas fa-check' />
+                        regularny feedback w trakcie trwania kursu
                       </li>
                     </ul>
                   </div>
                 </div>
+                <div className='price'>
+                  <span>
+                    {' '}
+                    80 <b>zł</b>
+                  </span>
+                  <em>godzina</em>
+                </div>
                 <a href='#contact-section' className='btn btn-solid'>
-                  <span>Start Project</span>
+                  <span>Wybieram</span>
                 </a>
                 <div
                   className='bg-img'
@@ -205,7 +222,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className='lui-bgtitle'>
-            <span> Pricing </span>
+            <span> Oferta </span>
           </div>
         </div>
       </div>

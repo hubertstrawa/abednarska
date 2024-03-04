@@ -123,7 +123,7 @@ const Services = () => {
                 <div className='lui-text'>
                   <div>
                     Każda lekcja ma konkretną strukturę, która została stworzona
-                    w oparciu na wieloletnim doświadczeniu.
+                    w oparciu o wieloletnie doświadczenie.
                   </div>
                 </div>
                 <SlideNextButton />

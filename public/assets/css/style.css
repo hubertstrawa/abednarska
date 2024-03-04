@@ -3379,7 +3379,8 @@ hr {
 }
 
 .pricing-item .price {
-  margin: 0 0 20px 0;
+  /* margin: 0 0 20px 0; */
+  margin: 30px 0 0 0;
   font-size: 30px;
   line-height: 1;
   font-weight: 700;
@@ -3399,7 +3400,7 @@ hr {
 
 .pricing-item .lui-text {
   padding-bottom: 30px;
-  min-height: 145px;
+  /* min-height: 145px; */
 }
 
 .pricing-item .lui-text p {
@@ -5127,15 +5128,6 @@ a.wp-block-button__link {
 @media screen and (min-width: 1025px) {
   .works-list .filter-links {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1600px) {
-  body {
-    zoom: 0.8;
-  }
-  .container-page {
-    margin-top: 2%;
   }
 }
 

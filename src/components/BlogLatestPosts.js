@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const BlogLatestPots = () => {
   return (
     <section className='lui-section lui-gradient-top' id='blog-section'>
