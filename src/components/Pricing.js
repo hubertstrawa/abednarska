@@ -122,7 +122,7 @@ const Pricing = () => {
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        oparty się na podręcznikach renomowanych wydawnictw
+                        oparty na podręcznikach renomowanych wydawnictw
                       </li>
                       <li>
                         <i className='fas fa-check' />

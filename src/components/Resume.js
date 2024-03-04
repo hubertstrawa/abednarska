@@ -40,7 +40,7 @@ const experienceData = [
     id: 2,
     title: 'Freelance',
     company: '',
-    dec: 'Udzielanie prywatnych lekcji angielskiego osobom na różnych poziomach zaawansowania. Pomaganie kursantom w osiąganiu celów językowych oraz eliminowaniu słabości. Wspieranie kursantów w budowaniu motywacji oraz pewności siebie podczas mówienia. Zapewnienie kontaktu i wsparcia merytorycznego między spotkaniami.',
+    dec: 'Udzielanie prywatnych lekcji angielskiego osobom na różnych poziomach zaawansowania. Pomaganie kursantom w osiąganiu celów językowych oraz eliminowaniu słabości. Wspieranie kursantów w budowaniu motywacji oraz pewności siebie podczas mówienia.',
     startYear: '2018',
     endYear: false,
   },

@@ -146,8 +146,9 @@ const Services = () => {
                 </h5>
                 <div className='lui-text'>
                   <div>
-                    Oferuję zajęcia ogólnorozwojowe (General English Course) lub
-                    konwersacyjne (Conversational Course), istnieje możliwość
+                    Oferuję zajęcia ogólnorozwojowe (General English Course),
+                    konwersacyjne (Conversational Course) i angielski dla
+                    biznesu (Business English Training). Istnieje możliwość
                     zajęć grupowych.
                   </div>
                 </div>
