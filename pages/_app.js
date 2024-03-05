@@ -33,7 +33,7 @@ const App = ({ Component, pageProps }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='HandheldFriendly' content='true' />
         <meta name='author' content='Hubert Strawa' />
-        <meta property='og:image' content='assets/images/preview.png' />
+        <meta property='og:image' content='https://i.imgur.com/Jw3Kv0d.png' />
         {/* Fonts */}
         <link
           rel='stylesheet'
