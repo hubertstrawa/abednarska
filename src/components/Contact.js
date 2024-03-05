@@ -50,13 +50,38 @@ const Contact = () => {
                   data-animate='active'
                 >
                   <div className='icon'>
+                    <i aria-hidden='true' className='far fa-address-book' />
+                  </div>
+                  <div className='title'>
+                    <span> Telefon </span>
+                  </div>
+                  <div className='lui-text'>
+                    <span>
+                      <a href='tel:731057696' style={{ color: '#000' }}>
+                        731 057 696
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className='numbers-item scrolla-element-anim-1 scroll-animate'
+                  data-animate='active'
+                >
+                  <div className='icon'>
                     <i aria-hidden='true' className='far fa-envelope' />
                   </div>
                   <div className='title'>
                     <span> E-mail </span>
                   </div>
                   <div className='lui-text'>
-                    <span> abednarska.kontakt@gmail.com </span>
+                    <span>
+                      <a
+                        href='mailto:abednarska.kontakt@gmail.com'
+                        style={{ color: '#000' }}
+                      >
+                        abednarska.kontakt@gmail.com
+                      </a>
+                    </span>
                   </div>
                 </div>
                 <div
@@ -73,20 +98,6 @@ const Contact = () => {
                     <span> Jak najszybciej :) </span>
                   </div>
                 </div>
-                {/* <div
-                  className='numbers-item scrolla-element-anim-1 scroll-animate'
-                  data-animate='active'
-                >
-                  <div className='icon'>
-                    <i aria-hidden='true' className='far fa-address-book' />
-                  </div>
-                  <div className='title'>
-                    <span> Phone </span>
-                  </div>
-                  <div className='lui-text'>
-                    <span> +1 900 - 900 - 9000 </span>
-                  </div>
-                </div> */}
               </div>
             </div>
             <div className='col-xs-12 col-sm-12 col-md-7 col-lg-7'>
