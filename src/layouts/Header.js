@@ -139,6 +139,16 @@ const Header = () => {
                               <a
                                 className='splitting-text-anim-2'
                                 data-splitting='chars'
+                                href='/#offer-section'
+                                onClick={() => linkClick()}
+                              >
+                                Oferta
+                              </a>
+                            </li>
+                            <li className='menu-item'>
+                              <a
+                                className='splitting-text-anim-2'
+                                data-splitting='chars'
                                 href='/#contact-section'
                                 onClick={() => linkClick()}
                               >
