@@ -17,7 +17,6 @@ const App = ({ Component, pageProps }) => {
         strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=G-WWMYQVSK5B`}
       />
-
       <Script strategy='lazyOnload'>
         {`
           window.dataLayer = window.dataLayer || [];
@@ -34,7 +33,7 @@ const App = ({ Component, pageProps }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='HandheldFriendly' content='true' />
         <meta name='author' content='Hubert Strawa' />
-        <meta property='og:image' content='https://i.imgur.com/o70qzHC.png' />
+        <meta property='og:image' content='assets/images/preview.png' />
         {/* Fonts */}
         <link
           rel='stylesheet'
