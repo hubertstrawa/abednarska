@@ -78,7 +78,7 @@ const Pricing = () => {
                 <div className='price'>
                   <span>
                     {' '}
-                    80 <b>zł</b>
+                    70 <b>zł</b>
                   </span>
                   <em>godzina</em>
                 </div>
@@ -143,7 +143,7 @@ const Pricing = () => {
                 <div className='price'>
                   <span>
                     {' '}
-                    80 <b>zł</b>
+                    70 <b>zł</b>
                   </span>
                   <em>godzina</em>
                 </div>
