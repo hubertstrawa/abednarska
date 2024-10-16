@@ -29,7 +29,7 @@ const Header = () => {
                     <img
                       width={228}
                       height={38}
-                      src='assets/images/logo_ab.svg'
+                      src='/assets/images/logo_ab.svg'
                       alt=''
                     />
                   </a>
@@ -146,6 +146,15 @@ const Header = () => {
                               </a>
                             </li>
                             <li className='menu-item'>
+                              <Link
+                                className='splitting-text-anim-2'
+                                data-splitting='chars'
+                                href='/blog'
+                              >
+                                Blog
+                              </Link>
+                            </li>
+                            <li className='menu-item'>
                               <a
                                 className='splitting-text-anim-2'
                                 data-splitting='chars'
@@ -155,6 +164,7 @@ const Header = () => {
                                 Kontakt
                               </a>
                             </li>
+
                             {/* <li className='menu-item'>
                               <a
                                 className='splitting-text-anim-2'

@@ -111,7 +111,7 @@ const Services = () => {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide className='swiper-slide'>
+            {/* <SwiperSlide className='swiper-slide'>
               <div className='services-item'>
                 <div className='lui-subtitle'>
                   <span> III </span>
@@ -134,11 +134,11 @@ const Services = () => {
                   }}
                 />
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide className='swiper-slide'>
               <div className='services-item'>
                 <div className='lui-subtitle'>
-                  <span> IV </span>
+                  <span> III </span>
                 </div>
                 <div className='icon' />
                 <h5 className='lui-title'>

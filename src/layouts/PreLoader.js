@@ -8,7 +8,7 @@ const PreLoader = () => {
           <div className='vertical-center'>
             <div className='spinner-logo'>
               <img
-                src='assets/images/logo_ab.svg'
+                src='/assets/images/logo_ab.svg'
                 alt='Aleksandra Bednarska - lektor angielskiego logo'
               />
               <div className='spinner-dot' />

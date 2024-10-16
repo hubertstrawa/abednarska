@@ -6,6 +6,8 @@ import Services from '../src/components/Services'
 import Contact from '../src/components/Contact'
 import Skills from '../src/components/Skills'
 import Pricing from '../src/components/Pricing'
+import BlogLatestPots from '../src/components/BlogLatestPosts'
+import { getLatestPosts } from '../lib/api'
 
 // const PortfolioIsotope = dynamic(
 //   () => import('../src/components/PortfolioIsotope'),
@@ -14,7 +16,8 @@ import Pricing from '../src/components/Pricing'
 //   }
 // )
 
-const Index = () => {
+const Index = ({ latestPosts }) => {
+  console.log('latestPosts', latestPosts)
   return (
     <Layout pageClassName={'home'}>
       {/* Section - Hero Started */}
@@ -182,10 +185,29 @@ const Index = () => {
       <Pricing />
 
       {/* Section - Blog */}
+      <BlogLatestPots latestPosts={latestPosts} />
 
       {/* Section - Contacts */}
       <Contact />
     </Layout>
   )
 }
+
+export const getStaticProps = async () => {
+  const latestPosts = getLatestPosts([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'ogImage',
+    'excerpt',
+    'tags',
+  ])
+
+  return {
+    props: { latestPosts },
+  }
+}
+
 export default Index

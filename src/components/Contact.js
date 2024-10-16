@@ -42,7 +42,7 @@ const Contact = () => {
                     <span> Adres </span>
                   </div>
                   <div className='lui-text'>
-                    <span> Jarosław / Rzeszów / zdalnie online </span>
+                    <span> Jarosław / online (Google Meet) </span>
                   </div>
                 </div>
                 <div

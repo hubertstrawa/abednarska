@@ -36,14 +36,13 @@ const Pricing = () => {
                 data-animate='active'
               >
                 <div className='lui-subtitle' style={{ marginBottom: '10px' }}>
-                  <span> Conversational English Course </span>
+                  <span> Exam Preparation Course </span>
                 </div>
                 <div className='lui-text'>
                   <div>
                     <p>
-                      Skupiony na doskonaleniu umiejętności konwersacji,
-                      płynności i swobody wypowiedzi. Skierowany do osób na
-                      poziomach B1-C2.
+                      Zawiera solidne przygotowanie do matury, egzaminu
+                      8-klasisty lub CAE.
                     </p>
                   </div>
                 </div>
@@ -52,25 +51,26 @@ const Pricing = () => {
                     <ul>
                       <li>
                         <i className='fas fa-check' />
-                        ukierunkowany na zastosowanie języka w praktyce
+                        dokładnie przeanalizujesz egzaminy z poprzednich lat
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        oparty na materiałach autentycznych: video, artykuły,
-                        fotografie
+                        szczegółowo omówisz strategie rozwiązywania
+                        poszczególnych zadań
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        uzupełniany materiałami autorskimi, odpowiadającymi
-                        indywidualnym potrzebom kursanta
+                        nadrobisz zaległości w atmosferze, która zmotywuje Cię
+                        do osiągnięcia sukcesu
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        kontakt i wsparcie merytoryczne między spotkaniami
+                        otrzymasz pakiet materiałów, odpowiadający Twoim
+                        indywidualnym potrzebom
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        regularny feedback w trakcie trwania kursu
+                        otrzymasz wsparcie merytoryczne między zajęciami
                       </li>
                     </ul>
                   </div>
@@ -78,7 +78,7 @@ const Pricing = () => {
                 <div className='price'>
                   <span>
                     {' '}
-                    70 <b>zł</b>
+                    80 <b>zł</b>
                   </span>
                   <em>godzina</em>
                 </div>
@@ -107,9 +107,10 @@ const Pricing = () => {
                 <div className='lui-text'>
                   <div>
                     <p>
-                      Zawiera poznawanie struktur gramatycznych, poszerzanie
-                      zakresu słownictwa ogólnego, rozwijanie umiejętności
-                      słuchania, pisania oraz mówienia.
+                      Skupiony na poszerzaniu zakresu słownictwa, naturalnym
+                      przyswajaniu struktur gramatycznych, doskonaleniu
+                      kompetencji komunikacyjnych, rozwijaniu umiejętności
+                      słuchania ze zrozumieniem.
                     </p>
                   </div>
                 </div>
@@ -118,24 +119,24 @@ const Pricing = () => {
                     <ul>
                       <li>
                         <i className='fas fa-check' />
-                        ukierunkowany na ogólny rozwój kompetencji językowych
+                        rozwiniesz ogólne kompetencje językowe
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        oparty na podręcznikach renomowanych wydawnictw
+                        nauczysz się jak reagować w życiowych sytuacjach
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        uzupełniany materiałami w formie video, artykułów,
-                        newsów, fotografii
+                        przełamiesz barierę językową
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        kontakt i wsparcie merytoryczne między spotkaniami
+                        otrzymasz pakiet materiałów, odpowiadający Twoim
+                        indywidualnym potrzebom
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        regularny feedback w trakcie trwania kursu
+                        otrzymasz wsparcie merytoryczne między zajęciami
                       </li>
                     </ul>
                   </div>
@@ -143,7 +144,7 @@ const Pricing = () => {
                 <div className='price'>
                   <span>
                     {' '}
-                    70 <b>zł</b>
+                    80 <b>zł</b>
                   </span>
                   <em>godzina</em>
                 </div>
@@ -169,8 +170,9 @@ const Pricing = () => {
                 <div className='lui-text'>
                   <div>
                     <p>
-                      Skupiony na poszerzaniu słownictwa z zakresu biznesowego
-                      angielskiego. Skierowany do osób na poziomach B1-C2.
+                      Skupiony na poszerzaniu zakresu słownictwa biznesowego
+                      oraz przygotowaniu do pracy w międzynarodowym środowisku.
+                      Skierowany do osób na poziomach B1-C2.
                     </p>
                   </div>
                 </div>
@@ -179,25 +181,22 @@ const Pricing = () => {
                     <ul>
                       <li>
                         <i className='fas fa-check' />
-                        przygotowuje do pracy w międzynarodowym środowisku
+                        rozwiniesz praktyczne umiejętności komunikacyjne w
+                        kontaktach biznesowych
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        zawiera rozwijanie praktycznych umiejętności komunikacji
-                        w kontaktach biznesowych
+                        poznasz konstrukcje gramatyczne i frazy używane w
+                        środowisku biznesowym
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        oparty na materiałach autentycznych: video, artykuły,
-                        fotografie
+                        otrzymasz pakiet materiałów, odpowiadający Twoim
+                        indywidualnym potrzebom
                       </li>
                       <li>
                         <i className='fas fa-check' />
-                        kontakt i wsparcie merytoryczne między spotkaniami
-                      </li>
-                      <li>
-                        <i className='fas fa-check' />
-                        regularny feedback w trakcie trwania kursu
+                        otrzymasz wsparcie merytoryczne między zajęciami
                       </li>
                     </ul>
                   </div>

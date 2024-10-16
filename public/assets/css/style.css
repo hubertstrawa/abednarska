@@ -5351,6 +5351,10 @@ a.wp-block-button__link {
 }
 
 @media screen and (max-width: 767px) {
+  .mystyle-mobile {
+    font-size: 85%;
+  }
+
   .lui-section {
     padding-bottom: 120px;
   }
@@ -5439,8 +5443,8 @@ a.wp-block-button__link {
     padding-left: 20px;
   }
   .header.sticky {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
   }
   .menu-full ul li.has-children > a i {
     font-size: 16px;

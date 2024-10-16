@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
-const BlogLatestPots = () => {
+const BlogLatestPots = ({ latestPosts }) => {
+  console.log(latestPosts)
   return (
     <section className='lui-section lui-gradient-top' id='blog-section'>
       {/* Heading */}
@@ -12,7 +13,7 @@ const BlogLatestPots = () => {
               data-splitting='words'
               data-animate='active'
             >
-              <span> Latest Blog </span>
+              <span> Blog </span>
             </h2>
             <div
               className='m-subtitle splitting-text-anim-1 scroll-animate'
@@ -21,7 +22,7 @@ const BlogLatestPots = () => {
             >
               <span>
                 {' '}
-                my <b>Articles and Advice</b>
+                moje <b>najnowsze posty</b>
               </span>
             </div>
           </div>
@@ -31,126 +32,46 @@ const BlogLatestPots = () => {
       <div className='v-line v-line-right'>
         <div className='container'>
           <div className='blog-items row'>
-            <div className='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
-              <div
-                className='archive-item scrolla-element-anim-1 scroll-animate'
-                data-animate='active'
-              >
-                <div className='image'>
-                  <Link legacyBehavior href='/blog-single'>
-                    <a>
-                      <img
-                        decoding='async'
-                        src='assets/images/single7.jpg'
-                        alt='The Main Thing For The Designer'
-                      />
-                    </a>
-                  </Link>
-                </div>
-                <div className='desc'>
-                  <div className='category lui-subtitle'>
-                    <span>October 31, 2022</span>
-                  </div>
-                  <h5 className='lui-title'>
-                    <Link legacyBehavior href='/blog-single'>
-                      <a>The Main Thing For The Designer</a>
-                    </Link>
-                  </h5>
-                  <div className='lui-text'>
-                    <p>
-                      Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                      mattis. Aliquam vel sem vel velit efficitur malesuada.
-                      Donec arcu lacus, ornare eget…{' '}
-                    </p>
-                    <div className='readmore'>
-                      <Link legacyBehavior href='/blog-single'>
-                        <a className='lnk'>Read more</a>
+            {latestPosts.map((post) => {
+              return (
+                <div className='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
+                  <div
+                    className='archive-item scrolla-element-anim-1 scroll-animate'
+                    data-animate='active'
+                  >
+                    <div className='image'>
+                      <Link legacyBehavior href={`/posts/${post.slug}`}>
+                        <a>
+                          <img
+                            decoding='async'
+                            src={post.ogImage.url}
+                            alt='The Main Thing For The Designer'
+                          />
+                        </a>
                       </Link>
+                    </div>
+                    <div className='desc'>
+                      <div className='category lui-subtitle'>
+                        <span>{post.date}</span>
+                      </div>
+                      <h5 className='lui-title'>
+                        <Link legacyBehavior href={`/posts/${post.slug}`}>
+                          <a>{post.title}</a>
+                        </Link>
+                      </h5>
+                      <div className='lui-text'>
+                        <p>{post.excerpt}</p>
+                        <div className='readmore'>
+                          <Link legacyBehavior href={`/posts/${post.slug}`}>
+                            <a className='lnk'>Czytaj więcej</a>
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
-              <div
-                className='archive-item scrolla-element-anim-1 scroll-animate'
-                data-animate='active'
-              >
-                <div className='image'>
-                  <Link legacyBehavior href='/blog-single'>
-                    <a>
-                      <img
-                        decoding='async'
-                        src='assets/images/blog-4-scaled-1.jpg'
-                        alt='Follow Your Own Design Process'
-                      />
-                    </a>
-                  </Link>
-                </div>
-                <div className='desc'>
-                  <div className='category lui-subtitle'>
-                    <span>October 31, 2022</span>
-                  </div>
-                  <h5 className='lui-title'>
-                    <Link legacyBehavior href='/blog-single'>
-                      <a>Follow Your Own Design Process</a>
-                    </Link>
-                  </h5>
-                  <div className='lui-text'>
-                    <p>
-                      Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                      mattis. Aliquam vel sem vel velit efficitur malesuada.
-                      Donec arcu lacus, ornare eget…{' '}
-                    </p>
-                    <div className='readmore'>
-                      <Link legacyBehavior href='/blog-single'>
-                        <a className='lnk'>Read more</a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
-              <div
-                className='archive-item scrolla-element-anim-1 scroll-animate'
-                data-animate='active'
-              >
-                <div className='image'>
-                  <Link legacyBehavior href='/blog-single'>
-                    <a>
-                      <img
-                        decoding='async'
-                        src='assets/images/blog-2.jpg'
-                        alt='Usability Secrets to Create Better Interfaces'
-                      />
-                    </a>
-                  </Link>
-                </div>
-                <div className='desc'>
-                  <div className='category lui-subtitle'>
-                    <span>November 28, 2021</span>
-                  </div>
-                  <h5 className='lui-title'>
-                    <Link legacyBehavior href='/blog-single'>
-                      <a>Usability Secrets to Create Better Interfaces</a>
-                    </Link>
-                  </h5>
-                  <div className='lui-text'>
-                    <p>
-                      Vivamus interdum suscipit lacus. Nunc ultrices accumsan
-                      mattis. Aliquam vel sem vel velit efficitur malesuada.
-                      Donec arcu lacus, ornare eget…{' '}
-                    </p>
-                    <div className='readmore'>
-                      <Link legacyBehavior href='/blog-single'>
-                        <a className='lnk'>Read more</a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              )
+            })}
           </div>
           <div className='load-more'>
             <Link legacyBehavior href='/blog'>
@@ -158,7 +79,7 @@ const BlogLatestPots = () => {
                 className='btn scrolla-element-anim-1 scroll-animate'
                 data-animate='active'
               >
-                <span>View Blog</span>
+                <span>Zobacz blog</span>
               </a>
             </Link>
           </div>
