@@ -27,7 +27,7 @@ import { slugifyClient } from '../../src/utils'
 
 export default function Post({ post, nextPosts }) {
   const router = useRouter()
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
+  const title = `${post.title} | Aleksandra Bednarska`
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -39,7 +39,10 @@ export default function Post({ post, nextPosts }) {
     <Layout>
       <Head>
         <title>{title}</title>
-        <meta property='og:image' content={post.ogImage.url} />
+        <meta
+          property='og:image'
+          content={`https://abednarska.com${post.ogImage.url}`}
+        />
       </Head>
       {/* Section Started Heading */}
       <section className='section section-inner started-heading'>
