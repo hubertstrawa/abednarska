@@ -3,8 +3,11 @@ import Script from 'next/script'
 import { Fragment, useEffect, useState } from 'react'
 import PreLoader from '../src/layouts/PreLoader'
 import '../styles/globals.css'
+import { useRouter } from 'next/router'
+
 const App = ({ Component, pageProps }) => {
   const [loader, setLoader] = useState(true)
+  const router = useRouter()
   useEffect(() => {
     setTimeout(() => {
       setLoader(false)
@@ -33,10 +36,15 @@ const App = ({ Component, pageProps }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='HandheldFriendly' content='true' />
         <meta name='author' content='Hubert Strawa' />
-        <meta
-          property='og:image'
-          content='https://abednarska.com/assets/images/preview.png'
-        />
+
+        {/* TODO / quick fix so it doesnt overwrite og:image on specific posts */}
+        {!router.pathname.startsWith('/posts/') && (
+          <meta
+            property='og:image'
+            content='https://abednarska.com/assets/images/preview.png'
+          />
+        )}
+
         {/* Fonts */}
         <link
           rel='stylesheet'
