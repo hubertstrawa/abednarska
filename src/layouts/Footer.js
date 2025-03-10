@@ -29,7 +29,7 @@ const Footer = () => {
                 className='copyright-text align-center scrolla-element-anim-1 scroll-animate'
                 data-animate='active'
               >
-                © 2023 <strong>Aleksandra Bednarska</strong>
+                © 2025 <strong>Aleksandra Bednarska</strong>
               </div>
             </div>
             <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4'>
