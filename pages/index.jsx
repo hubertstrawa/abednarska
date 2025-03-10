@@ -17,7 +17,6 @@ import { getLatestPosts } from '../lib/api'
 // )
 
 const Index = ({ latestPosts }) => {
-  console.log('latestPosts', latestPosts)
   return (
     <Layout pageClassName={'home'}>
       {/* Section - Hero Started */}

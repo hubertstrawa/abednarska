@@ -31,7 +31,6 @@ export default function Post({ post, nextPosts }) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  console.log('nextPosts', nextPosts)
   const postIndex = nextPosts.findIndex((el) => el.slug === post.slug)
   const nextPost = nextPosts[postIndex + 1] || nextPosts[0]
 
