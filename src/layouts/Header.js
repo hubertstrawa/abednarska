@@ -293,7 +293,7 @@ const Header = () => {
                         {/* social */}
                         <div className='menu-social-links'>
                           <a
-                            href='https://www.instagram.com/abednarska3/'
+                            href='https://www.instagram.com/teacher.bednarska/'
                             target='blank'
                             className='scrolla-element-anim-1'
                             title='instagram'
