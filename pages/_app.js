@@ -118,10 +118,6 @@ const App = ({ Component, pageProps }) => {
           href='/assets/images/logo_ab.svg'
           type='image/x-icon'
         />
-        <link
-          rel='stylesheet'
-          href='https://sibforms.com/forms/end-form/build/sib-styles.css'
-        />
 
         {/* <script
           async
@@ -135,32 +131,27 @@ const App = ({ Component, pageProps }) => {
       </Head>
       {loader && <PreLoader />}
       <Component {...pageProps} />
-      <Script>
-        {`
-        window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code'
-        window.LOCALE = 'en'
-        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
-          'The information provided is invalid. Please review the field format and try again.'
-
-        window.REQUIRED_ERROR_MESSAGE = 'This field cannot be left blank. '
-
-        window.GENERIC_INVALID_MESSAGE =
-          'The information provided is invalid. Please review the field format and try again.'
-
-        window.translation = {
-          common: {
-            selectedList: '{quantity} list selected',
-            selectedLists: '{quantity} lists selected',
-            selectedOption: '{quantity} selected',
-            selectedOptions: '{quantity} selected',
-          },
-        }
-
-        var AUTOHIDE = Boolean(0)
-        `}
-      </Script>
-      <Script defer src='https://sibforms.com/forms/end-form/build/main.js' />
     </Fragment>
   )
 }
 export default App
+
+{
+  /* <script>
+function ml_webform_success_23737190() {
+  var $ = ml_jQuery || jQuery
+  $('.ml-subscribe-form-23737190 .row-success').show()
+  $('.ml-subscribe-form-23737190 .row-form').hide()
+}
+</script>
+
+<script
+src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024"
+type="text/javascript"
+></script>
+<script>
+fetch(
+  'https://assets.mailerlite.com/jsonp/1389481/forms/149025632834028856/takel'
+)
+</script> */
+}
