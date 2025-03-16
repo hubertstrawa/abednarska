@@ -8,6 +8,7 @@ import Skills from '../src/components/Skills'
 import Pricing from '../src/components/Pricing'
 import BlogLatestPots from '../src/components/BlogLatestPosts'
 import { getLatestPosts } from '../lib/api'
+import BrevoNewsletter from '../src/components/BrevoNewsletter'
 
 // const PortfolioIsotope = dynamic(
 //   () => import('../src/components/PortfolioIsotope'),
@@ -140,6 +141,7 @@ const Index = ({ latestPosts }) => {
           </div>
         </div>
       </section>
+
       {/* Section - Services */}
       <Services />
       {/* Section - Skills */}
@@ -188,6 +190,9 @@ const Index = ({ latestPosts }) => {
 
       {/* Section - Contacts */}
       <Contact />
+      <section>
+        <BrevoNewsletter />
+      </section>
     </Layout>
   )
 }
