@@ -187,7 +187,7 @@ const Index = ({ latestPosts }) => {
       {/* Section - Blog */}
       <BlogLatestPots latestPosts={latestPosts} />
 
-      <div
+      {/* <div
         id='mlb2-23737190'
         class='ml-form-embedContainer ml-subscribe-form ml-subscribe-form-23737190'
       >
@@ -258,7 +258,7 @@ const Index = ({ latestPosts }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Section - Contacts */}
       <Contact />
