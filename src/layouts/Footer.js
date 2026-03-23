@@ -12,7 +12,7 @@ const Footer = () => {
                 <a
                   target='_blank'
                   rel='nofollow'
-                  href='https://www.instagram.com/teacher.bednarska/'
+                  href='https://www.instagram.com/english.teacher.bednarska'
                 >
                   <i aria-hidden='true' className='fab fa-instagram' />
                 </a>
